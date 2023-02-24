@@ -6,7 +6,7 @@ import { AuthDto } from './dto';
 @Controller('auth')
 
 // export class AuthController {
-//     authService: AuthService;
+//     private authService: AuthService;
 //     constructor(authService: AuthService) {
 //         this.authService = authService;
 //     }
@@ -19,7 +19,7 @@ export class AuthController {
         return this.authService.signup(dto);
     }
     @Post('signin')
-    signin(@Body() dto: AuthDto) {
+    signin(@Body() dto: AuthDto) {     
         return this.authService.signin(dto);
     }
 }
