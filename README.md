@@ -18,4 +18,5 @@
 5. npx prisma generate
 6. npx prisma studio
 
-46:42
+
+2: 27
